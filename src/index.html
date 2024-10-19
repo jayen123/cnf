@@ -7,27 +7,456 @@
     <link rel="stylesheet" href="../dist/output.css" />
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1 class="text-9xl font-Inter">Hasan</h1>
+    <!-- header section start Here -->
+    <header>
+      <div class="container mx-auto flex justify-between items-center p-4">
+        <a
+          href="#"
+          class="flex items-center gap-2 text-xs sm:text-base font-Inter font-semibold"
+        >
+          <img
+            class="w-10 h-10 sm:w-auto sm:h-auto"
+            src="./image/logo.png"
+            alt="logo"
+          />
+          <h2>
+            Benapole <br />
+            C&F Association
+          </h2>
+        </a>
+        <button
+          id="menuButton"
+          class="md:hidden text-gray-600 focus:outline-none"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+        <nav class="hidden md:flex items-center space-x-4">
+          <div class="relative">
+            <button
+              id="committeDropdown"
+              class="flex items-center text-sm text-black font-Inter font-semibold hover:text-blue-500"
+            >
+              Committe
+              <svg
+                class="w-4 h-4 ml-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  id="committeIcon"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                ></path>
+              </svg>
+            </button>
+            <div
+              id="committeMenu"
+              class="absolute hidden bg-white shadow-md z-10"
+            >
+              <a
+                href="#committe1"
+                class="block px-4 py-2 text-sm text-black font-Inter font-semibold hover:bg-gray-200"
+                >Committe 1</a
+              >
+              <a
+                href="#committe2"
+                class="block px-4 py-2 text-sm text-black font-Inter font-semibold hover:bg-gray-200"
+                >Committe 2</a
+              >
+            </div>
+          </div>
+          <a
+            href="#general-members"
+            class="text-sm text-black font-Inter font-semibold hover:text-blue-500"
+            >General Members</a
+          >
+          <div class="relative">
+            <button
+              id="infoDropdown"
+              class="flex items-center text-sm text-black font-Inter font-semibold hover:text-blue-500"
+            >
+              Informations
+              <svg
+                class="w-4 h-4 ml-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  id="infoIcon"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                ></path>
+              </svg>
+            </button>
+            <div id="infoMenu" class="absolute hidden bg-white shadow-md z-10">
+              <a
+                href="#info1"
+                class="block px-4 py-2 text-sm text-black font-Inter font-semibold hover:bg-gray-200"
+                >Info 1</a
+              >
+              <a
+                href="#info2"
+                class="block px-4 py-2 text-sm text-black font-Inter font-semibold hover:bg-gray-200"
+                >Info 2</a
+              >
+            </div>
+          </div>
+          <a
+            href="#contact"
+            class="text-sm text-black font-Inter font-semibold hover:text-blue-500"
+            >Contact Us</a
+          >
+          <div class="relative">
+            <button
+              id="moreDropdown"
+              class="flex items-center text-sm text-black font-Inter font-semibold hover:text-blue-500"
+            >
+              More
+              <svg
+                class="w-4 h-4 ml-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  id="moreIcon"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                ></path>
+              </svg>
+            </button>
+            <div id="moreMenu" class="absolute hidden bg-white shadow-md z-10">
+              <a
+                href="#more1"
+                class="block px-4 py-2 text-sm text-black font-Inter font-semibold hover:bg-gray-200"
+                >More 1</a
+              >
+              <a
+                href="#more2"
+                class="block px-4 py-2 text-sm text-black font-Inter font-semibold hover:bg-gray-200"
+                >More 2</a
+              >
+            </div>
+          </div>
+          <a
+            href="#login"
+            class="bg-primary text-black font-semibold px-4 py-2 rounded"
+            >Login</a
+          >
+        </nav>
+      </div>
+    </header>
 
-    <div class="owl-carousel owl-theme">
-      <div class="item"><h4>1</h4></div>
-      <div class="item"><h4>2</h4></div>
-      <div class="item"><h4>3</h4></div>
-      <div class="item"><h4>4</h4></div>
-      <div class="item"><h4>5</h4></div>
-      <div class="item"><h4>6</h4></div>
-      <div class="item"><h4>7</h4></div>
-      <div class="item"><h4>8</h4></div>
-      <div class="item"><h4>9</h4></div>
-      <div class="item"><h4>10</h4></div>
-      <div class="item"><h4>11</h4></div>
-      <div class="item"><h4>12</h4></div>
-    </div>
+    <aside
+      id="sidebar"
+      class="md:hidden fixed inset-0 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out z-20"
+    >
+      <div class="flex justify-between items-center p-4">
+        <a
+          href="#"
+          class="flex items-center gap-2 text-xs sm:text-base font-Inter font-semibold"
+        >
+          <img
+            class="w-10 h-10 sm:w-auto sm:h-auto"
+            src="./image/logo.png"
+            alt="logo"
+          />
+          <h2>
+            Benapole <br />
+            C&F Association
+          </h2>
+        </a>
+        <button id="closeButton" class="text-gray-600 focus:outline-none">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <nav class="flex flex-col p-4 space-y-2">
+        <div class="relative">
+          <button
+            id="mobileCommitteDropdown"
+            class="flex items-center text-sm text-black font-Inter font-semibold hover:text-blue-500"
+          >
+            Committe
+            <svg
+              class="w-4 h-4 ml-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                id="mobileCommitteIcon"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              ></path>
+            </svg>
+          </button>
+          <div
+            id="mobileCommitteMenu"
+            class="absolute hidden bg-white shadow-md z-10"
+          >
+            <a
+              href="#committe1"
+              class="block px-4 py-2 text-sm text-black font-Inter font-semibold hover:bg-gray-200"
+              >Committe 1</a
+            >
+            <a
+              href="#committe2"
+              class="block px-4 py-2 text-sm text-black font-Inter font-semibold hover:bg-gray-200"
+              >Committe 2</a
+            >
+          </div>
+        </div>
+        <a
+          href="#general-members"
+          class="text-sm text-black font-Inter font-semibold hover:text-blue-500"
+          >General Members</a
+        >
+        <div class="relative">
+          <button
+            id="mobileInfoDropdown"
+            class="flex items-center text-sm text-black font-Inter font-semibold hover:text-blue-500"
+          >
+            Informations
+            <svg
+              class="w-4 h-4 ml-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                id="mobileInfoIcon"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              ></path>
+            </svg>
+          </button>
+          <div
+            id="mobileInfoMenu"
+            class="absolute hidden bg-white shadow-md z-50"
+          >
+            <a
+              href="#info1"
+              class="block px-4 py-2 text-sm text-black font-Inter font-semibold hover:bg-gray-200"
+              >Info 1</a
+            >
+            <a
+              href="#info2"
+              class="block px-4 py-2 text-sm text-black font-Inter font-semibold hover:bg-gray-200"
+              >Info 2</a
+            >
+          </div>
+        </div>
+        <a
+          href="#contact"
+          class="text-sm text-black font-Inter font-semibold hover:text-blue-500"
+          >Contact Us</a
+        >
+        <div class="relative">
+          <button
+            id="mobileMoreDropdown"
+            class="flex items-center text-sm text-black font-Inter font-semibold hover:text-blue-500"
+          >
+            More
+            <svg
+              class="w-4 h-4 ml-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                id="mobileMoreIcon"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              ></path>
+            </svg>
+          </button>
+          <div
+            id="mobileMoreMenu"
+            class="absolute hidden bg-white shadow-md z-10"
+          >
+            <a
+              href="#more1"
+              class="block px-4 py-2 text-sm text-black font-Inter font-semibold hover:bg-gray-200"
+              >More 1</a
+            >
+            <a
+              href="#more2"
+              class="block px-4 py-2 text-sm text-black font-Inter font-semibold hover:bg-gray-200"
+              >More 2</a
+            >
+          </div>
+        </div>
+        <a href="#login" class="bg-blue-500 text-white px-4 py-2 rounded"
+          >Login</a
+        >
+      </nav>
+    </aside>
+
+    <section>
+      <div class="container mx-auto p-4">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div
+              class="relative h-screen bg-cover bg-center bg-no-repeat rounded-3xl"
+              style="background-image: url('../src/image/hero-1.png')"
+            >
+              <div
+                class="absolute rounded-3xl inset-0 bg-gradient-to-b from-transparent to-[rgba(9,1,58,0.7)]"
+              ></div>
+              <div
+                class="container mx-auto h-full flex flex-col items-center justify-center"
+              >
+                <h1
+                  class="text-white font-Inter md:text-4xl font-bold text-center relative z-10"
+                >
+                  ফেডারেশন অব বাংলাদেশ সিএন্ডএফ্ <br class="hidden md:block" />
+                  এজেন্টস এসোসিয়েশনের নব নির্বাচিত
+                  <br class="hidden md:block" />
+                  কর্মকর্তাবৃন্দ
+                </h1>
+                <button
+                  class="bg-transparent font-Inter border-2 border-white rounded-lg py-3 px-7 mt-8 text-white relative z-10"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <h4 class="text-9xl flex items-center justify-center h-screen">
+              2
+            </h4>
+          </div>
+          <div class="item">
+            <h4 class="text-9xl flex items-center justify-center h-screen">
+              3
+            </h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- header section End Here -->
+
+    <!-- Footer section -->
+    <footer class="bg-[#242424] text-white py-8 mt-24">
+      <div class="container mx-auto px-4">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center md:items-start space-y-8 md:space-y-0"
+        >
+          <!-- Left Section (Logo and Social Links) -->
+          <div class="flex flex-col items-center md:items-start space-y-4">
+            <a
+              href="#"
+              class="flex items-center gap-2 text-xs sm:text-base font-Inter font-semibold"
+            >
+              <img
+                class="w-10 h-10 sm:w-auto sm:h-auto"
+                src="./image/logo.png"
+                alt="logo"
+              />
+              <h2>
+                Benapole <br />
+                C&F Association
+              </h2>
+            </a>
+            <!-- Social Media Icons -->
+            <div class="flex space-x-4">
+              <a href="#" class="hover:text-gray-400"
+                ><i class="fab fa-xing"></i
+              ></a>
+              <a href="#" class="hover:text-gray-400"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="hover:text-gray-400"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a href="#" class="hover:text-gray-400"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Middle Section (Use Cases) -->
+          <div class="flex flex-col space-y-2 text-center md:text-left">
+            <h3 class="font-semibold">Use cases</h3>
+            <a href="#" class="hover:text-gray-400">UI design</a>
+            <a href="#" class="hover:text-gray-400">UX design</a>
+            <a href="#" class="hover:text-gray-400">Wireframing</a>
+            <a href="#" class="hover:text-gray-400">Diagramming</a>
+            <a href="#" class="hover:text-gray-400">Brainstorming</a>
+            <a href="#" class="hover:text-gray-400">Online whiteboard</a>
+          </div>
+
+          <!-- Right Section (Explore) -->
+          <div class="flex flex-col space-y-2 text-center md:text-left">
+            <h3 class="font-semibold">Explore</h3>
+            <a href="#" class="hover:text-gray-400">Design</a>
+            <a href="#" class="hover:text-gray-400">Prototyping</a>
+            <a href="#" class="hover:text-gray-400">Development features</a>
+            <a href="#" class="hover:text-gray-400">Design systems</a>
+            <a href="#" class="hover:text-gray-400">Collaboration features</a>
+            <a href="#" class="hover:text-gray-400">Design process</a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="js/jquery.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/02cdcdcbc0.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,44 @@
+.owl-theme .owl-nav {
+  position: absolute;
+  right: 5%;
+  display: flex;
+  gap: 20px;
+}
+
+.owl-theme .owl-nav button:first-child {
+  color: #ed6326;
+  border: 1px solid #ed6326;
+  border-radius: 100%;
+  font-size: 20px;
+  padding: 10px !important;
+  transition: all ease-in-out 0.3s;
+}
+
+.owl-theme .owl-nav button:first-child:hover {
+  background-color: #ed6326;
+  color: white;
+}
+
+.owl-theme .owl-nav button:last-child {
+  color: #ed6326;
+  border: 1px solid #ed6326;
+  border-radius: 100%;
+  font-size: 20px;
+  padding: 10px !important;
+  transition: all ease-in-out 0.3s;
+}
+.owl-carousel .owl-nav button:last-child:hover {
+  background-color: #ed6326;
+  color: white;
+}
+
+.owl-theme .owl-dots {
+  position: absolute;
+  margin-top: 30px;
+}
+.owl-theme .owl-dots .owl-dot.active span {
+  border-radius: 100%;
+  background-color: #f16768;
+  box-shadow: 2px 6px 10px 0px #00000026;
+  transition: all ease-in-out 0.5s;
+}
